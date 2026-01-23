@@ -14,7 +14,9 @@ public class Operations {
     void create_new_acc (Scanner sc) {
         //new account deatails
         System.out.print("********** Provide Details **********\nname : ");
-        String name = sc.next();
+        String name = sc.nextLine();
+
+        sc.nextLine();
 
         System.out.print("Initial_Deposite : ");
         double balance = sc.nextDouble();
