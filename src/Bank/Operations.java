@@ -19,14 +19,14 @@ public class Operations {
         sc.nextLine();
 
         System.out.print("Initial_Deposite : ");
-        double balance = sc.nextDouble();
+        double deposit = sc.nextDouble();
 
         genarate_ac_number();//generated new account number
 
         //call the constructor
-        Account new_acc = new Account(name);//object created
-        new_acc.set_accNum(ac_num);//set account number
-        new_acc.set_balance(balance);//set initial deposit
+        Account new_acc = new Account(ac_num,name);//object created
+
+        new_acc.deposit(deposit);//initial deposit
 
         //opened account succesfully
         System.out.println("** Status : Account is opened succesfully **");
