@@ -22,11 +22,13 @@ public class Operations {
         genarate_ac_number();//generated new account number
 
         //call the constructor
-        Account new_acc = new Account(ac_num,name,balance);//object created
+        Account new_acc = new Account(name);//object created
+        new_acc.set_accNum(ac_num);//set account number
+        new_acc.set_balance(balance);//set initial deposit
 
         //opened account succesfully
         System.out.println("** Status : Account is opened succesfully **");
-        System.out.println("********** Your Account number is **********\nA/C :" + new_acc.acc_number);
+        System.out.println("********** Your Account number is **********\nA/C :" + new_acc.get_acc_number());
         System.out.println();//new line
     }
 
@@ -48,9 +50,7 @@ public class Operations {
         System.out.println();//new line
     }
     void check_balance () {
-        //yet to develope
-        System.out.println("** Your Balance : 0.00 **");
-        System.out.println();//new line
+
     }
 
 }
