@@ -1,4 +1,4 @@
-package Bank;
+package CBS;
 
 public class Account {
     private final long acc_number ;

@@ -1,4 +1,4 @@
-package Bank;
+package CBS;
 
 
 public class Main {
