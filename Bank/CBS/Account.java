@@ -5,17 +5,21 @@ public class Account {
     private String name;
     private double balance;
 
-
+    //method is for the initial deposit at the time of account opening
     public void deposit (double deposit) {
         this.balance += deposit;
     }
 
-    public long get_acc_number() {
-        return acc_number;
+
+    //withdraw
+    public void withdraw (double amount) {
+        this.balance = this.balance - amount;
     }
-    public double getBalance() {
-        return balance;
-    }
+
+
+    public long get_acc_number () { return acc_number; }
+    public String getName() { return name; }
+    public double getBalance() { return balance; }
 
 
     //this constructor will be called when customer wants to open an account
